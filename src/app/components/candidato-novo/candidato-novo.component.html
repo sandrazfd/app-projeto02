@@ -44,28 +44,28 @@
     </div>
     <div class="col-md-6">
         <label class="form-label">Logradouro:</label>
-        <input type="text" class="form-control" [(ngModel)]="endereco.logradouro" name="logradouro" placeholder="Rua, Av,...">
+        <input type="text" class="form-control" [(ngModel)]="candidato.logradouro" name="logradouro" placeholder="Rua, Av,...">
     </div>
     <div class="col-md-2">
       <label for="inputZip" class="form-label">Numero</label>
-      <input type="text" class="form-control" [(ngModel)]="endereco.numero" name="numero">
+      <input type="text" class="form-control" [(ngModel)]="candidato.numero" name="numero">
     </div>
     <div class="col-md-2">
         <label class="form-label">Cep:</label>
-        <input type="text" class="form-control" [(ngModel)]="endereco.cep" name="cep">
+        <input type="text" class="form-control" [(ngModel)]="candidato.cep" name="cep">
     </div>
     <div class="col-md-4">
         <label class="form-label">Cidade:</label>
-        <input type="text" class="form-control" [(ngModel)]="endereco.cidade" name="cidade">
+        <input type="text" class="form-control" [(ngModel)]="candidato.cidade" name="cidade">
     </div>
     <div class="col-sm-2"> 
         <label class="form-label">UF:</label>
-        <input type="text" class="form-control"[(ngModel)]="endereco.uf" name="uf">
+        <input type="text" class="form-control"[(ngModel)]="candidato.uf" name="uf">
     </div>
 
     <div class="col-12">
-        <button class="btn btn-primary but"(click)='incluir(candidato)' >INCLUIR CANDIDATO</button>
-        <button class="btn btn-secondary"(click)='fechar()'>VOLTAR</button>
+        <button class="btn btn-primary but"(click)="incluir(candidato)">INCLUIR CANDIDATO</button>
+        <button class="btn btn-secondary"(click)="fechar()">VOLTAR</button>
     </div>
     
   </form>

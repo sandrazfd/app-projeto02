@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Candidato } from 'src/app/interfaces/candidato';
-import { Endereco } from 'src/app/interfaces/endereco';
+
 import { CandidatosService } from 'src/app/services/candidatos.service';
 import { SexosService } from './../../services/sexos.service';
 import { EscolaridadeService } from './../../services/escolaridade.service';
@@ -24,15 +24,14 @@ export class CandidatoNovoComponent implements OnInit{
    ){}
 
   ngOnInit(): void {
-   this.candidato ={id:0, nome:'', cpf:'', dataNascimento:'', telefone:'', email:'', idEscolaridade:0, idSexo: 0 };
-   this.endereco = {logradouro:'', numero:0, cep:'', cidade:'', uf:''};
+   
+   this.candidato ={id:0, nome:'', cpf:'', dataNascimento:'', telefone:'', email:'', idEscolaridade:0, idSexo: 0 , logradouro:'',numero:0 , cep:'', cidade:'', uf:'' }; 
    this.sexos = this.sexoService.getSexos();
    this.escolaridades = this.escolaridadeService.getEscolaridade();
    
   }
 
   candidato!: Candidato;
-  endereco!: Endereco;
   escolaridades!: Escolaridade[];
   sexos! : Sexo[];
 
@@ -44,8 +43,8 @@ export class CandidatoNovoComponent implements OnInit{
 
  incluir(candidato:Candidato) : void{
 
-  candidato.endereco = this.endereco;
-  this.candidatoService.postCandidatoApi(candidato).subscribe(()=> this.router.navigate(['home']));
+  this.candidatoService.postCandidatoApi(candidato)
+  .subscribe(()=> this.router.navigate(['candidatos/lista']));
  }
  
 

@@ -12,6 +12,7 @@ import { CandidatoListaComponent } from './components/candidato-lista/candidato-
 import { CandidatoNovoComponent } from './components/candidato-novo/candidato-novo.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { HttpClientModule} from '@angular/common/http';
     FooterComponent,
     CandidatoListaComponent,
     CandidatoNovoComponent,
+    LoginComponent,
     
   ],
   imports: [

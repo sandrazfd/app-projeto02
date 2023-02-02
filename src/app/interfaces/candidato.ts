@@ -1,5 +1,5 @@
 
-import { Endereco } from 'src/app/interfaces/endereco';
+
 
 export interface Candidato {
     id?: number;
@@ -10,7 +10,11 @@ export interface Candidato {
     dataNascimento: string;
     telefone: string;
     email: string;
-    endereco?: Endereco;
+    logradouro: string;
+    numero: number;
+    cep: string;
+    cidade: string;
+    uf: string;
     
   
     
