@@ -44,7 +44,7 @@ export class CandidatoNovoComponent implements OnInit{
  incluir(candidato:Candidato) : void{
 
   this.candidatoService.postCandidatoApi(candidato)
-  .subscribe(()=> this.router.navigate(['candidatos/lista']));
+  .subscribe(()=> this.router.navigate(['candidatos']));
  }
  
 

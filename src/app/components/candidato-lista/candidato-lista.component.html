@@ -1,3 +1,9 @@
+
+<div class="mb-3 alert alert-primary">
+    <label class="form-laber">Busque o nome do Candidato</label>
+    <input type="text" class="form-control" #busca (keyup)="0">
+</div>
+
 <table class="table table-striped text-center">
     <thead>
         <tr> 
@@ -11,7 +17,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let c of candidatos">
+        <tr *ngFor="let c of candidatos | busca:busca.value">
             
             <td>{{c.nome}}</td>
             <td>{{c.dataNascimento | date : 'dd/MM/yyyy'}}</td>

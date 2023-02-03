@@ -15,6 +15,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { CandidatoRemocaoComponent } from './components/candidato-remocao/candidato-remocao.component';
 import { CandidatoAlterarComponent } from './components/candidato-alterar/candidato-alterar.component';
+import { BuscaPipe } from './pipe/busca.pipe';
 
 
 
@@ -31,6 +32,7 @@ import { CandidatoAlterarComponent } from './components/candidato-alterar/candid
     LoginComponent,
     CandidatoRemocaoComponent,
     CandidatoAlterarComponent,
+    BuscaPipe,
    
   ],
   imports: [
