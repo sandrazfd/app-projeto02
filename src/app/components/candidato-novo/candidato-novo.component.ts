@@ -25,7 +25,7 @@ export class CandidatoNovoComponent implements OnInit{
 
   ngOnInit(): void {
    
-   this.candidato ={id:0, nome:'', cpf:'', dataNascimento:'', telefone:'', email:'', idEscolaridade:0, idSexo: 0 , logradouro:'',numero:0 , cep:'', cidade:'', uf:'' }; 
+   this.candidato ={id:0, nome:'', cpf:'', dataNascimento:'', telefone:'', email:'', idEscolaridade:0, idSexo: 0 , idEndereco:0, logradouro:'',numero:0 , cep:'', cidade:'', uf:'' }; 
    this.sexos = this.sexoService.getSexos();
    this.escolaridades = this.escolaridadeService.getEscolaridade();
    

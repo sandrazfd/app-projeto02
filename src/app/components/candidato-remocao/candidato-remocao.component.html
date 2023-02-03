@@ -1,0 +1,8 @@
+<div class="mb-3">
+    <h3 class="text-danger">Tem certeza que deseja remover este candidato?</h3>
+    <h2>{{candidato.nome}}</h2>
+    <div>
+        <button class=" bt btn-default but" (click)="fechar()"> Não, voltar para a lista</button>
+        <button class="btn btn-danger" (click)="remover()">Sim, remover</button>
+    </div>
+</div>

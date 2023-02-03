@@ -13,6 +13,9 @@ import { CandidatoNovoComponent } from './components/candidato-novo/candidato-no
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { CandidatoRemocaoComponent } from './components/candidato-remocao/candidato-remocao.component';
+import { CandidatoAlterarComponent } from './components/candidato-alterar/candidato-alterar.component';
+
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { LoginComponent } from './components/login/login.component';
     CandidatoListaComponent,
     CandidatoNovoComponent,
     LoginComponent,
-    
+    CandidatoRemocaoComponent,
+    CandidatoAlterarComponent,
+   
   ],
   imports: [
     BrowserModule,

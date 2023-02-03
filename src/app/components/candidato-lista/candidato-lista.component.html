@@ -7,6 +7,7 @@
             <th>CPF</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,14 @@
             <td>{{c.cpf}}</td>
             <td>{{c.email}}</td>
             <td>{{c.telefone}}</td>
+            <td>
+                <a routerLink="/candidatos/alterar/{{c.id}}">
+                    <i class="bi bi-pencil"></i>
+                </a>
+                <a routerLink="/candidatos/remover/{{c.idEndereco}}">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </td>
         </tr>
     </tbody>
 </table>

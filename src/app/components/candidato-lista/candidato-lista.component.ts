@@ -14,7 +14,7 @@ export class CandidatoListaComponent implements OnInit {
 
   ngOnInit(): void {
    
-   this.candidatosService.getCandidatoApi().subscribe(resposta=> this.candidatos = resposta);
+   this.candidatosService.getCandidatosApi().subscribe(resposta=> this.candidatos = resposta);
 
   }
   candidatos: Candidato[] = [];
