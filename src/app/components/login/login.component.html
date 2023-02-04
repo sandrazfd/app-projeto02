@@ -1,4 +1,6 @@
- <div class="borda ">
+  
+ 
+  <div class="borda ">
     <h2 class="text-center text-primary"> Entre com Login </h2>
 
 
@@ -12,7 +14,7 @@
             <label  class="form-label">Senha:</label>
             <input type="password" class="form-control" [(ngModel)]="user.senha" name="senha"/>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 d-flex ">
             <button class="btn btn-primary but" (click)="validar(user)">LOGIN</button>
             <button class="btn btn-secondary" (click)="fechar()">VOLTAR</button>
         </div>
@@ -22,4 +24,4 @@
             </div>
         </div>
     </form>
-</div> 
+</div>  
