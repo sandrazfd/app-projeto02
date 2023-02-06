@@ -1,4 +1,258 @@
-.size{
+html, body, div, span, applet, object, iframe,
+ h2, h3, h4, h5, h6,  blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.fundo, footer{    
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+header{
+    background: #054f77;
+    padding: 20px 0;   
+    width: 100%;    
+}
+
+body .fundo{
+    background: white;
+    width: 100%;
+}
+
+
+.logo{
+    width: 220px;
+}
+
+nav{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.botão{
+    margin: 0px 10px;
+    font-size: 25px;    
+}
+
+.botoes{
+    margin: 0px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.botoes:hover{
+    border: 1px solid white;
+}
+
+
+/*MAIN*/
+
+
+.logo-login{
+    width: 400px;
+    float: left;    
+}
+
+.titulo{
+    display: block;
+    text-align: center;
+    
+    color: black;
+    text-align: center;  
+    margin-top: 80px; 
+}
+
+
+.login{
+    margin: 80px;
+    align-content: center;
+    width: 900px;
+}
+
+.login h2, .produtos h2{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 90px;
+    color: #054f77;    
+    align-content: center;
+    margin: 0 80px;
+}
+
+.login p, .produtos p, .empresas-parceiras p{
+    color:black;
+    /* color: #8a9499; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    margin: 50px;
+    margin: 0 80px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+/*botoes: cancelar e enviar*/
+.inputs{
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+.botao-entrar{
+    display: inline-block;
+    background: #0E76A8;
+    text-align: center;
+    margin: 55px;    
+    border-radius: 3px;
+    border-color: #0E76A8;
+    padding: 10px;
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;    
+}
+
+.empresas-parceiras{    
+    text-align: center;
+    margin: 50px;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.empresas-parceiras p{
+    text-align: center;
+    margin: 35px;    
+}
+
+.empresas-parceiras .logo-scania{
+    width: 150px;
+    filter: opacity(50%);
+}
+
+.empresas-parceiras .logo-impacta{
+    width: 150px;
+    filter: opacity(60%);
+}
+
+
+.botao-entrar:hover{
+    background: #0E88bb;
+}
+
+.questoes legend{
+    display: inline;
+    text-align: center;
+    color: #0E76A8;     
+    cursor: pointer;      
+    margin: 10px;
+    font-size: 20px;
+}
+
+.questoes legend:hover{
+    color: #0E88bb;
+}
+
+
+.recrutamento {
+    background-color: rgba(190, 249, 253, 0.447) ;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.recrutamento h3{
+    color: #054f77;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recrutamento p {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    width: 400px;
+    text-align: center;
+}
+
+
+.recrutamento .logo-recrutamento{
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.produtos dl{
+    text-align: left;
+    margin: 50px 300px 0 300px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+.produtos dt{
+    color: #054f77;
+    font-weight: bold;
+}
+
+.produtos dd{
+    color: black;
+}
+
+/*FOOTER*/
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #054f77;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;    
+}
+
+
+
+/* .size{
     width:50px;
 }
 
@@ -6,4 +260,4 @@
     max-height: 700px;
     margin-left: auto;
     margin-right: auto;
-}
+} */

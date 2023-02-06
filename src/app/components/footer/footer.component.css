@@ -5,3 +5,11 @@
    
     
 } */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #054f77;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;    
+}
